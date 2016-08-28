@@ -16,18 +16,17 @@ __Setup__:
   - i3-gaps
   - feh
   - dmenu
-  - pantheon-terminal
 * _Shell_: Bash
 * _Text Editor_: vim
 
 
 __Interests__:
 
-  * Space
-  * Control Theory
+  * Software Architecture
   * Operating Systems
-
-[Github](https://github.com/vincesiu)
+  * Control Theory
+  * Dragon Boat
+  * Video Games
 
 <!--
 This is the base Jekyll theme. You can find out more info about customizing your Jekyll theme, as well as basic Jekyll usage documentation at [jekyllrb.com](http://jekyllrb.com/)
