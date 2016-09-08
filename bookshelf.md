@@ -15,7 +15,7 @@ permalink: /bookshelf/
 ### __Things I've Read__:
 
 
-##### Whitepapers:
+#### Whitepapers:
 
 - _MapReduce: Simplified Data Processing on Large Clusters_
 : google whitepaper on the high level algorithm of how their map reduce algorithm works, along with use cases, challenges with real world deployment, and performance of different versions
@@ -24,10 +24,10 @@ permalink: /bookshelf/
 : google whitepaper on interesting design patterns. My favorite are the sidecar patterns (used for logging, allows modularity, however I would be very wary of over-engineering this stuff. This sidecar pattern is useful in docker especially, due to the difficulty of handling multiple processes in one docker container). I have not worked with multi-node application patterns, but I found the idea behind leader-election and scatter/gather pretty cool. I hope one day I'll be able to apply it.
 
 
-- RFC 3164 / RFC 5424
-: the 3164 was the first version and then the 5424 came after, this details the syslog protocol and allows for separation of the application which generates messages, the system which stores messages, and the frameworks which analyze the information inside. This is useful because it allows us to create a modular system in which we can easily swap in and out pieces (like elk!!!). However, note that RFC3164 syslog is not compliant with RFC5424 syslog, so watch out when handling legacy applications.
+- _RFC 3164 / RFC 5424_
+: syslog spec, 3164 was the first version and then 5424 came after, this details the syslog protocol and allows for separation of the application which generates messages, the system which stores messages, and the frameworks which analyze the information inside. This is useful because it allows us to create a modular system in which we can easily swap in and out pieces (like elk!!!). However, note that RFC3164 syslog is not compliant with RFC5424 syslog, so watch out when handling legacy applications.
 
-##### Books:
+#### Books:
 
 - Sam Newman: _Building Microservices_
 : architecture of microservices
