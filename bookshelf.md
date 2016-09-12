@@ -27,6 +27,10 @@ permalink: /bookshelf/
 - _RFC 3164 / RFC 5424_
 : syslog spec, 3164 was the first version and then 5424 came after, this details the syslog protocol and allows for separation of the application which generates messages, the system which stores messages, and the frameworks which analyze the information inside. This is useful because it allows us to create a modular system in which we can easily swap in and out pieces (like elk!!!). However, note that RFC3164 syslog is not compliant with RFC5424 syslog, so watch out when handling legacy applications.
 
+- Jochen Topf: _The HTML Form Protocol Attack_
+: an interesting paper on an old attack which is interesting. It involves deflecting a request. I would like to think of this as a kind of "reflected" attack, since a targeted user must be sent the page with the malicious code, and the user will initiate the HTML post request. The paper proposes either using the attack to make a scapegoat, or to use it to send data to a network which the target has access to and not the attacker.
+
+
 #### Books:
 
 - Sam Newman: _Building Microservices_
