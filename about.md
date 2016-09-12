@@ -16,7 +16,7 @@ __Setup__:
   - i3-gaps
   - feh
   - dmenu
-* _Shell_: Bash
+* _Shell_: Zsh
 * _Text Editor_: vim
 
 
