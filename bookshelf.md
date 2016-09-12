@@ -30,6 +30,9 @@ permalink: /bookshelf/
 - Jochen Topf: _The HTML Form Protocol Attack_
 : an interesting paper on an old attack which is interesting. It involves deflecting a request. I would like to think of this as a kind of "reflected" attack, since a targeted user must be sent the page with the malicious code, and the user will initiate the HTML post request. The paper proposes either using the attack to make a scapegoat, or to use it to send data to a network which the target has access to and not the attacker.
 
+- _A name for the null pointer: nullptr (revision 4)_
+: Interesting. Provides a lot of interesting cases for why the transition from NULL (which is just a #define macro as 0) to nullptr (which is a special character). There's a lot of small nuances that language designers would go nuts over! Just read the first 2 pages for crazy cool combinations. For example, std::string s1(false) will compile since it will call char *constructor with null, but std::string s2(true) will throw a compilation error. One of the interesting notes about proposed solutions to NULL is that supporting backwards compatibility is a major concern of language developers, some of the decisions that they made early on have stayed and bit C++ development in it's butt. However, look at the divide between Python 2 and Python 3, and how long it has taken for people to move towards 3!
+: Also on a side note, one of the proposed implementations for nullptr uses an anonymous class, and I researched it, and found out that one of his uses was filling the role of anonymous functions (and since C++11 have probably fallen out of favor). The biggest reason is (unsurprisingly) compatiblity reasons again, since C used a lot of typedefs on anonymous classes. In addition, I feel much better seeing the difficulty in how even veteran language designers have when looking for names for their variables.
 
 #### Books:
 
