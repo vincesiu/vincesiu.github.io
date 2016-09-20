@@ -47,3 +47,18 @@ permalink: /bookshelf/
 
 - Adam Webber: _Modern Programming Languages: A Practical Introduction_
 : actually a solid book providing introduction to important language concepts.
+
+- Kurose and Ross: _Computer Networking: A Top-Down Approach_
+: networking book, a bit dry, but DANG these pages are packed with useful information. Reccomend it if you're ever interested in learning about networks. The stuff that the authors included are vital towards understanding the current network environment
+
+- Shannon and Weaver: _The Mathematical Theory of Communication_
+: math and proofs incarnate, shows how there is a limit to the amount of information that can be transported, given certain parameters. Fascinating stuff. Should reread when I have a better grasp of mathematics.
+
+- Bryant and O'Hallaron: _Computer Systems: A Programmer's Perspective_
+: brings back memories. Great book, great problems, great tests.... horrible teacher. I learned a ton about structures and systems that run on the metal, and that modern OS's are built upon (eg multithreading, bit operations, memory handling)
+
+- Kleinberg and Tardos: _Algorithm Design_
+: ... old book, not too good at explaining itself, I personally needed to run through the proofs and algorithms several times each to understand them. Content is solid though.
+
+- Patterson and Hennessy: _Computer Organization and Design_
+: gave me a healthy respect for low level systems and how they operate. I understand processors a lot more because of this book, as well as the WHY behind the specs of a computer and what the numbers mean
