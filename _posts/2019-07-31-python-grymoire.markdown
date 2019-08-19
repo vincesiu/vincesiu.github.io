@@ -9,6 +9,21 @@ categories: python grymoire
 
 Random tidbits that I need to reference every now and then. Everything is assumed python3
 
+## Exceptions
+
+Template for custom exception stuff
+
+```
+class CustomError(Error):
+    """Raised when there is a custom error"""
+    pass
+
+# The following all work
+raise CustomError("Error message!")
+raise CustomError()
+raise CustomError
+```
+
 ## Logging
 
 ```
