@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  "Networking Grymoire"
-date:   2019-07-31 11:25:51 +0000
+date:   2019-10-12 10:43:51 +0000
 categories: networking grymoire
 ---
 
