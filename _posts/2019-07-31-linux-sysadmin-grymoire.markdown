@@ -43,6 +43,31 @@ Random tidbits that I need to reference every now and then
 
 ### ps
 
+### tar
+
+```
+# Serialize to tar format
+tar -cvf <archive>.tar <directory>
+# Serialize to tar and then compress with gzip
+tar -zcvf <archive>.tar.gz> <directory>
+```
+
+### vmstat
+
+```
+vmstat 1 # prints report every second
+vmstat -d 1 # prints report on disk stats, so new columns
+```
+
+Most useful columns imo are:
+* Procs:r/b
+    + r: runqueue, either running or waiting to run
+    + b: this is number of processes in uninterruptible sleep
+* IO:bi/bo
+    + this is the number of memory swapped in and out /s
+* Memory:free
+    + amount of idle memory
+
 ## memory management
 
 ncdu 
