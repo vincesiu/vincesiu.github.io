@@ -71,3 +71,57 @@ Most useful columns imo are:
 ## memory management
 
 ncdu 
+
+## jq
+
+example.json
+```
+{
+	"meow" : "nyan",
+	"woof" : [
+	{ "color" : "red" },
+	{ "color" : "blue" },
+	{ "color" : "green" }
+	       ],
+}
+```
+
+basic jq usage
+```
+cat example.json | jq '.'
+jq '.' example.json
+```
+
+getting a key
+```
+jq '.meow'
+jw '.[meow]'
+```
+
+listing all keys of an object
+```
+jq 'keys' example.json
+```
+
+length of an object
+```
+jq '.woof | length'
+```
+
+getting a key from every element in an array
+```
+jq '.woof[] | .color'
+```
+
+### Aggregation and Composition
+
+piping
+```
+jq '.woof[] | .color'
+```
+
+getting multiple keys
+
+```
+jq '.meow,.woof'
+```
