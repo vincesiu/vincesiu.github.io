@@ -125,3 +125,46 @@ getting multiple keys
 ```
 jq '.meow,.woof'
 ```
+
+## find
+
+```
+# find and delete by inum
+find . -type f -inum ${INUM} -delete
+
+# find and delete by inum by another way
+find . -type f -inum ${INUM} -exec rm {} \;
+
+# find by case insensitive name
+find . -iname '*.jpg'
+
+# list everything
+find .
+```
+
+## xargs
+
+input.txt
+```
+123
+456
+789
+```
+
+```
+# equivalent of running echo 123 456 789
+$ cat input.txt | xargs echo
+123 456 789
+
+# equivalent of running echo 3 times for each line
+$ cat input.txt | xargs -I {} echo
+123
+456
+789
+
+# running xargs in parallel
+$ cat input.txt | xargs -P 10 -I {} echo
+123
+456
+789
+```
