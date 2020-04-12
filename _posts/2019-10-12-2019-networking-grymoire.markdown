@@ -59,3 +59,19 @@ nslookup -query=ns www.yahoo.com
 ```
 mtr <ip address>
 ```
+
+## firewall
+
+### ufw
+
+// allowing a new rule
+ufw allow 8080/tcp
+
+// where are those dang rules?
+sudo find / -type f -iname 'user*rules' -ipath '*ufw*'
+
+// defaults
+ufw allow ssh
+ufw default deny incoming
+ufw default allow outgoing
+ufw enable
