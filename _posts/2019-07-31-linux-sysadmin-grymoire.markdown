@@ -18,11 +18,25 @@ Random tidbits that I need to reference every now and then
 - helps you edit the current command in an editor
     * `ctrl-x ctrl-e`
 
+## windows vs dos line endings
+
+- dos2unix is your command
+- `cat -v ${file} | grep ^M`
+  * this command will find any of the CRLF line endings in your file
+
 ## git 
 
 - `git branch -a`
 - `git reset ...`
 - `git log --oneline --graph --decorate --all`
+
+### diff goodness
+- `git diff --cached`
+  * shows the difference between index and current commit
+- `git diff`
+  * shows the difference between index and working directory
+- `git diff HEAD`
+  * shows the difference between current commit and working directory
 
 ### regular workflow
 
