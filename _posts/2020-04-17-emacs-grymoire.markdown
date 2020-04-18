@@ -14,9 +14,9 @@ Random tidbits that I need to reference every now and then. Everything is assume
 * Where are the manuals?
   - C-h r
 * Provide documentation for a function
-  - C-h f <function>
+  - C-h f ${FUNCTION}
 * Search for commands 
-  - C-h a <keyword> ...
+  - C-h a ${KEYWORD} ...
 
 # Elisp
 
@@ -28,4 +28,4 @@ todo
   - C-_
   - C-x u
 * Go to line
-  - M-g M-g <linenum>
+  - M-g M-g $LINENUM
