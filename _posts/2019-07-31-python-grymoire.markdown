@@ -24,6 +24,16 @@ raise CustomError()
 raise CustomError
 ```
 
+Printing full exception traceback
+```
+import traceback
+
+try:
+    1/0
+except:
+    traceback.print_exc()
+```
+
 ## Logging
 
 ```
