@@ -28,4 +28,19 @@ todo
   - C-_
   - C-x u
 * Go to line
-  - M-g M-g $LINENUM
+  - M-g M-g ${LINENUM}
+
+
+# Emacs CLI Options
+
+* Start without using emacs .emacs files
+  - emacs -q
+
+# Emacs daemon mode
+
+* cli start with daemon
+  - emacs --daemon
+* command to exit out of emacs
+  - M-x save-buffers-kill-emacs
+* cli start with debug mode one
+  - emacs --debug-init
