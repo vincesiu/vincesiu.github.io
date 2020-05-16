@@ -96,17 +96,20 @@ example.json
 	{ "color" : "red" },
 	{ "color" : "blue" },
 	{ "color" : "green" }
-	       ],
+	       ]
 }
 ```
 
-basic jq usage
+### basic jq usage
+
+Print the whole struct
+
 ```
 cat example.json | jq '.'
 jq '.' example.json
 ```
 
-getting a key
+Getting a key
 ```
 jq '.meow'
 jw '.[meow]'
@@ -114,7 +117,7 @@ jw '.[meow]'
 
 listing all keys of an object
 ```
-jq 'keys' example.json
+jq '. | keys' example.json
 ```
 
 length of an object
@@ -127,18 +130,33 @@ getting a key from every element in an array
 jq '.woof[] | .color'
 ```
 
-### Aggregation and Composition
+### Explanation of Piping and Iteration
 
-piping
+From my understanding, piping is used to separate function calls and field accesses. Looping and iteration are also usually using pipes.
+'.' is the input value at each stage of a pipeline, so as an example:
+
 ```
-jq '.woof[] | .color'
+jq '.woof[].color'
+jq '.woof | .[] | .color'
+jq '.woof | .color' # does not work because the .color filter is trying to access the color field of an array, which doesn't make sense
 ```
 
 getting multiple keys
-
 ```
 jq '.meow,.woof'
 ```
+
+### Outputting csv and maps
+
+csv takes arrays
+maps will apply the function to all the elements in an array if a single array is passed, or all the elements if multiple elements are passed. Feels suspiciously like the Python list function
+```
+jq -r '.woof | map(.color) | @csv'
+
+```
+
+Anything more complicated? PLEASE USE A REAL PROGRAMMING LANGUAGE
+
 
 ## find
 
