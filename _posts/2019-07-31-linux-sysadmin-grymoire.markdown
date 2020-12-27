@@ -152,10 +152,21 @@ csv takes arrays
 maps will apply the function to all the elements in an array if a single array is passed, or all the elements if multiple elements are passed. Feels suspiciously like the Python list function
 ```
 jq -r '.woof | map(.color) | @csv'
+```
 
+### Getting the key and value
+
+```
+jq '. | to_entries[] | ".key,.value"'
 ```
 
 Anything more complicated? PLEASE USE A REAL PROGRAMMING LANGUAGE
+
+### printf
+
+it is very similar to printf c strings
+
+printf "%s" "hello world"
 
 
 ## find

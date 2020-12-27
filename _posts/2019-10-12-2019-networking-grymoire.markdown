@@ -75,3 +75,14 @@ ufw allow ssh
 ufw default deny incoming
 ufw default allow outgoing
 ufw enable
+
+## ip things
+
+### ip route
+
+// List all routes
+ip route list
+// Set a new default route
+ip route add default via 192.168.1.1 dev eth1
+// Check what interface we use for a given destination
+ip route get 8.8.8.8

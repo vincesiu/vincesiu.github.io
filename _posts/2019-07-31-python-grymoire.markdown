@@ -108,3 +108,17 @@ patch vs patch.object
 
 The former is a string path, and patch.object is an actual reference
 
+
+## type encoding
+
+```
+a = 'hello world'
+b = a.encode # utf8 to binary
+b.decode # binary to utf8
+```
+
+```
+ord('v') == 118
+chr(118) == 'v'
+```
+
